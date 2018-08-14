@@ -1,19 +1,4 @@
 spring:
-  application:
-    name: app
-  sleuth:
-    enabled: true
-    log:
-      slf4j:
-        enabled: false
-    sampler:
-      probability: 0.8f
   zipkin:
-    topic: zipkin-dev
-    sender:
-      type: kafka
-    compression:
-      enabled: true
-    locator:
-      discovery:
-        enabled: true
+    topic: zipkin-prod
+
