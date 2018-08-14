@@ -1,0 +1,21 @@
+# Configuration made available to Spring during initialisation -
+# https://cloud.spring.io/spring-cloud-static/spring-cloud-commons/2.0.0.M9/multi/multi__spring_cloud_context_application_context_services.html#_the_bootstrap_application_context
+spring:
+  application:
+    name: m2m-rest-adaptor
+  sleuth:
+    enabled: true
+    log:
+      slf4j:
+        enabled: false
+    sampler:
+      probability: 0.8f
+  zipkin:
+    topic: zipkin
+    sender:
+      type: kafka
+    compression:
+      enabled: true
+    locator:
+      discovery:
+        enabled: true
