@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: app
+  sleuth:
+    sampler:
+      probability: 0.8f
+  zipkin:
+    sender:
+      type: kafka
+    compression:
+      enabled: true
+    locator:
+      discovery:
+        enabled: true
