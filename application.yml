@@ -10,4 +10,4 @@ spring:
       probability: 0.1f
 app:
   service:
-    name: Stephen
+    name: Steven
