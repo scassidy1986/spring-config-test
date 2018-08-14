@@ -11,8 +11,7 @@ spring:
     sampler:
       probability: 0.8f
   zipkin:
-    rabbitmq:
-      queue: zipkin
+    topic: zipkin
     sender:
       type: kafka
     compression:
