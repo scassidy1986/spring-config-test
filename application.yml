@@ -11,3 +11,7 @@ spring:
 app:
   service:
     name: Steven
+platform:
+  registereis:
+    encryption:
+      enabled: true
